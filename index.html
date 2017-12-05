@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/vendors/highlight.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="h-header">
+            <div class="container">
+                <div class="center">
+                    <div class="col-xs-12 col-sm-6 col-md-6 phone">
+                        <img src="img/phone.jpg">
+                        <p>(0123) 456 7890</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 account">
+                        <ul class="navbar-right menutop">
+                            <li ><a href="">WishList</a></li>
+                            <li ><a href="">Compare</a></li>
+                            <li ><a href="">Account <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="c-header">
+            <div class="container">
+                    <div class="col-xs-12 col-md-3 logo">
+                        <a href="#"><img src="img/logo.jpg"></a>
+                    </div>
+                    <div class="col-xs-12 col-md-4 tk">
+                        <div class="input-group">
+                            <input type="text" class="form-control search" placeholder="Search ">
+                              <span class="input-group-btn">
+                                <button class="btn btn-secondary searchbtn" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                              </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 cart">
+                        <div class="shop">
+                            <select class="form-control money">
+                                <option>$</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            <select class="form-control lang">
+                                <option>Language</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            <a href="#" class="btn btn-danger sc"> <span class="glyphicon glyphicon-shopping-cart"></span> Shopping cart (0)</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="container">
+                <div class="row">
+                        <nav class="navbar-inverse"> 
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                              </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <div class="mid-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li class="dropdown">
+                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Short</a></li>
+                                        <li><a href="#">coat</a></li>
+                                        <li><a href="#">hat</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Men <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Short</a></li>
+                                        <li><a href="#">coat</a></li>
+                                        <li><a href="#">hat</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li class="dropdown">
+                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bags <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Balo</a></li>
+                                        <li><a href="#">handbag</a></li>
+                                        <li><a href="#">leather bag</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a href="#">Toys</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slogan">
+            <div class="container">
+                    <p class="text1">iriure dolor in Hendrerit</p>
+                    <p class="text2">Duis autem vel eum </p>
+                    <button type="button">SHOP MEN</button>
+            </div>
+        </div>
+        <div id="promotion">
+            <div class="container">
+                <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="fa fa-truck"></span> Free Shipping on all orders over $100.</div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="glyphicon glyphicon-globe"></span> Worldwide Delivery and same day dispatch.</div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 ship"><span class="glyphicon glyphicon-gift"></span> Receive Gifts when you 100 subscribe. </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="mid-lane">
+        <div id="post">
+            <div class="container">
+                    <div class="col-xs-4 col-md-4 sp1">
+                        <button type="button">shoes store</button>
+                    </div>
+                    <div class="col-xs-4 col-md-4 sp2">
+                        <button type="button">hand bags</button>
+                    </div>
+                    <div class="col-xs-4 col-md-4 sp3">
+                        <button type="button">colothing</button>
+                    </div>
+            </div>
+        </div>
+        <div id="clogthing">
+            <div class="container">
+                    <div class="box">
+                        <p class="td">clogthings</p>
+                        <div class="clean"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 l-clogthing">
+                        
+                            <div class="img-clog">
+                                <div class="jacket">
+                                    <p class="td1">Jackets For Men</p>
+                                    <p class="nd1">Criminal Damage Shorts in Mesh with Stripe<br> Denim Shorts In Slim Fit Longer Lengths Print</p>
+                                    <button type="button">SHOP  COLLECTION</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 f-clogthing">
+                        <div class="owl-carousel owl-theme owl-four">
+                            <div class="item">
+                                <div class="img-sp">
+                                    <div class="saler">
+                                        <a href="#" class="new">New</a>
+                                        <br>
+                                        <a href="#" class="sale">Sale</a>  
+                                        <p class="tile">-15%</p>  
+                                    </div>
+                                    
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/cloting.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Eleven Paris T-Shirt with
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000 <span>$700.000</span></p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-sp">
+                                    <div class="saler">
+                                        <a href="#" class="new">New</a>
+                                        <br>
+                                        <a href="#" class="sale">Sale</a>
+                                        <p class="tile">-15%</p>  
+                                    </div>
+                                    
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/bag.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Eleven Paris T-Shirt with
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000 <span>$700.000</span></p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-sp">
+                                    <div class="saler">
+                                        <a href="#" class="new">New</a>
+                                        <br>
+                                        <a href="#" class="sale">Sale</a>
+                                        <p class="tile">-15%</p>  
+                                    </div>
+                                    
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/cloting.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Eleven Paris T-Shirt with
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000 <span>$700.000</span></p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-sp">
+                                    <div class="saler">
+                                        <a href="#" class="new">New</a>
+                                        <br>
+                                        <a href="#" class="sale">Sale</a>
+                                        <p class="tile">-15%</p>  
+                                    </div>
+                                    
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/bag.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Eleven Paris T-Shirt with
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000 <span>$700.000</span></p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>      
+                            <script>
+                                $(document).ready(function() {
+                                  $('.owl-four').owlCarousel({
+                                    margin: 10,
+                                    loop: true,
+                                    nav:true,
+                                    navText: ["<i class='glyphicon glyphicon-menu-left'></i>","<i class='glyphicon glyphicon-menu-right'></i>"],
+                                    dots: false,
+                                    responsive: {
+                                      0: {
+                                        items: 1,
+                                        nav: false
+                                      },
+                                      400: {
+                                        items: 2,
+                                        nav: false
+                                      },
+                                      992: {
+                                        items: 1,
+                                        nav: true
+                                      },
+                                      1200: {
+                                        items: 2,
+                                        nav: true
+                                      },
+                                    }
+                                  })
+                                })
+                              </script>         
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div id="clogthing">
+            <div class="container">
+                    <div class="box">
+                        <p class="td">bags & shoes</p>
+                        <div class="clean"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 l-bag">
+                        <div class="owl-carousel owl-theme owl-first">
+                            <div class="item">
+                                <div class="img-sp">
+                                    <div class="saler">
+                                        <a href="#" class="new">New</a>
+                                        <br>
+                                        <a href="#" class="sale">Sale</a>
+                                        <p class="tile">-15%</p>  
+                                    </div>
+                                    
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/cloting.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Eleven Paris T-Shirt with
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000 <span>$700.000</span></p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                    <div class="img-sp">
+                                        <div class="saler">
+                                            <a href="#" class="new">New</a>
+                                            <br>
+                                            <a href="#" class="sale">Sale</a>
+                                            <p class="tile">-15%</p>  
+                                        </div>
+                                        
+                                        <div class="hover">
+                                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                            <a href=""><span class="fa fa-heart-o"></span></a>
+                                            <a href=""><span class="fa fa-exchange"></span></a>
+                                        </div>
+                                        <img src="./img/bag.jpg">
+                                        
+                                    </div>
+                                    <div class="name">
+                                        Eleven Paris T-Shirt with
+                                    </div>
+                                    <div class="tien">
+                                        <p>$696,000 <span>$700.000</span></p>
+                                    </div>
+                                    <div class='rating-widget'>
+                                      <div class='rating-stars text-center'>
+                                        <ul id='stars'>
+                                          <li class='star' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                               
+                                  $('.owl-first').owlCarousel({
+                                    margin: 10,
+                                    loop: true,
+                                    nav:false,
+                                    dots: false,
+                                    responsive: {
+                                      0: {
+                                        items: 1
+                                      },
+                                      400: {
+                                        items: 2
+                                      },
+                                      992: {
+                                        items: 1
+                                      },
+                                      1200: {
+                                        items: 2
+                                      },
+                                    }
+                                  })
+                    </script>
+                    </div>
+                    <div class="col-xs-12 col-md-6 f-bag">
+                        <div class="owl-carousel owl-theme owl-one">
+                            <div class="item">
+                                <div class="img-clog1">
+                                    <div class="jacket">
+                                        <p class="td1">handbags sale</p>
+                                        <p class="nd1">Criminal Damage Shorts in Mesh with Stripe<br> Denim Shorts In Slim Fit Longer Lengths Print</p>
+                                        <button type="button">SHOP  COLLECTION</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img-clog">
+                                    <div class="jacket">
+                                        <p class="td1">Jackets For Men</p>
+                                        <p class="nd1">Criminal Damage Shorts in Mesh with Stripe<br> Denim Shorts In Slim Fit Longer Lengths Print</p>
+                                        <button type="button">SHOP  COLLECTION</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                               
+                                  $('.owl-one').owlCarousel({
+                                    margin: 10,
+                                    loop: true,
+                                    items: 1,
+                                    nav:true,
+                                    navText: ["<i class='glyphicon glyphicon-menu-left'></i>","<i class='glyphicon glyphicon-menu-right'></i>"],
+                                    responsive: {
+                                      0: {
+                                        dots: false,
+                                        nav:false
+                                      },
+                                      992: {
+                                        dots: false,
+                                        nav:true
+                                      },
+                                    }
+                                  })
+                    </script>
+                    </div>
+            </div>
+        </div>
+        <div id="seller">
+            <div class="container">
+                    <div class="box">
+                        <p class="td">best seller <span>Hot sale</span></p>
+                        <div class="clean"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 sell">
+                        <div class="owl-carousel owl-theme owl-two">
+                            <div class="item">
+                                <div class="img-sp">
+                                    <div class="saler">
+                                        <a href="#" class="new">New</a>  
+                                    </div>
+                                    
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/sli3.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Three Dots 3/4 Sleeve Deep V-Neck
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000 <span>$700.000</span></p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                    <div class="img-sp">
+                                        <div class="saler">
+                                            <a href="#" class="sale">Sale</a> 
+                                        </div>
+                                        
+                                        <div class="hover">
+                                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                            <a href=""><span class="fa fa-heart-o"></span></a>
+                                            <a href=""><span class="fa fa-exchange"></span></a>
+                                        </div>
+                                        <img src="./img/sli4.jpg">
+                                        
+                                    </div>
+                                    <div class="name">
+                                        Three Dots 3/4 Sleeve Deep V-Neck
+                                    </div>
+                                    <div class="tien">
+                                        <p>$696,000</p>
+                                    </div>
+                                    <div class='rating-widget'>
+                                      <div class='rating-stars text-center'>
+                                        <ul id='stars'>
+                                          <li class='star' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                <div class="img-sp">
+                                    <div class="hover">
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a href=""><span class="fa fa-heart-o"></span></a>
+                                        <a href=""><span class="fa fa-exchange"></span></a>
+                                    </div>
+                                    <img src="./img/sli5.jpg">
+                                    
+                                </div>
+                                <div class="name">
+                                    Mirum est notare quam littera gothica
+                                </div>
+                                <div class="tien">
+                                    <p>$696,000</p>
+                                </div>
+                                <div class='rating-widget'>
+                                  <div class='rating-stars text-center'>
+                                    <ul id='stars'>
+                                      <li class='star' title='Poor' data-value='1'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Fair' data-value='2'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Good' data-value='3'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='Excellent' data-value='4'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                      <li class='star' title='WOW!!!' data-value='5'>
+                                        <i class='fa fa-star fa-fw'></i>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                    <div class="img-sp">
+                                        
+                                        <div class="hover">
+                                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                            <a href=""><span class="fa fa-heart-o"></span></a>
+                                            <a href=""><span class="fa fa-exchange"></span></a>
+                                        </div>
+                                        <img src="./img/sli3.jpg">
+                                        
+                                    </div>
+                                    <div class="name">
+                                        Three Dots 3/4 Sleeve Deep V-Neck
+                                    </div>
+                                    <div class="tien">
+                                        <p>$696,000</p>
+                                    </div>
+                                    <div class='rating-widget'>
+                                      <div class='rating-stars text-center'>
+                                        <ul id='stars'>
+                                          <li class='star' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img-sp">
+                                        <div class="hover">
+                                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                            <a href=""><span class="fa fa-heart-o"></span></a>
+                                            <a href=""><span class="fa fa-exchange"></span></a>
+                                        </div>
+                                        <img src="./img/sli4.jpg">
+                                        
+                                    </div>
+                                    <div class="name">
+                                        Mirum est notare quam littera gothica
+                                    </div>
+                                    <div class="tien">
+                                        <p>$696,000</p>
+                                    </div>
+                                    <div class='rating-widget'>
+                                      <div class='rating-stars text-center'>
+                                        <ul id='stars'>
+                                          <li class='star' title='Poor' data-value='1'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Fair' data-value='2'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Good' data-value='3'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='Excellent' data-value='4'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                          <li class='star' title='WOW!!!' data-value='5'>
+                                            <i class='fa fa-star fa-fw'></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <script> 
+                                  $('.owl-two').owlCarousel({
+                                    margin: 10,
+                                    loop: true,
+                                    nav:true,
+                                    navText: ["<i class='glyphicon glyphicon-menu-left'></i>","<i class='glyphicon glyphicon-menu-right'></i>"],
+                                    dots: false,
+                                    responsive: {
+                                      0: {
+                                        items: 1,
+                                        nav:false
+                                      },
+                                      400: {
+                                        items: 2,
+                                        nav:false
+                                      },
+                                      600:{
+                                        items:3,
+                                        nav:false
+                                      },
+                                      992: {
+                                        items: 4
+                                      },
+                                      1200: {
+                                        items: 5
+                                      },
+                                    }
+                                  })
+                    </script>
+                </div>
+        </div>                
+    </div>
+    <div id="bloger">
+        <div class="container">
+                    <div class="box">
+                        <p class="td">Popular blogs</p>
+                        <div class="clean"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 blog">
+                        <div class="owl-carousel owl-theme owl-thre">
+                            <div class="item"> 
+                                <p class="mid-blog">Vivamus vehicula urna non leo vehicula, et auctor nisi dapibus. Aliquam enim nulla</p>
+                                <div class="bot-blog">
+                                    <div class="clean2"></div>
+                                    <div class="col-xs-12 left-blog">
+                                        <p>March 02, 2015</p>
+                                    </div>
+                                    <div class="col-xs-12 right-blog">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <img class="img-responsive" src="./img/blog1.jpg">
+                            </div>
+                            <div class="item">
+                                <p class="mid-blog">Vivamus vehicula urna non leo vehicula, et auctor nisi dapibus. Aliquam enim nulla</p>
+                                <div class="bot-blog">
+                                <div class="clean2"></div>
+                                    <div class="col-xs-12 left-blog">
+                                        <p>March 02, 2015</p>
+                                    </div>
+                                    <div class="col-xs-12 right-blog">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <img class="img-responsive" src="./img/blog2.jpg">
+                            </div>
+                            <div class="item">
+                                <p class="mid-blog">Vivamus vehicula urna non leo vehicula, et auctor nisi dapibus. Aliquam enim nulla</p>
+                                <div class="bot-blog">
+                                    <div class="clean2"></div>
+                                    <div class="col-xs-12 left-blog">
+                                        <p>March 02, 2015</p>
+                                    </div>
+                                    <div class="col-xs-12 right-blog">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <img class="img-responsive" src="./img/blog.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <script> 
+                                  $('.owl-thre').owlCarousel({
+                                    margin: 10,
+                                    loop: true,
+                                    nav:true,
+                                    navText: ["<i class='glyphicon glyphicon-menu-left'></i>","<i class='glyphicon glyphicon-menu-right'></i>"],
+                                    dots: false,
+                                    responsive: {
+                                      0: {
+                                        items: 1,
+                                        nav: false
+                                      },
+                                      600: {
+                                        items: 2,
+                                        nav: false
+                                      },
+                                      992: {
+                                        items: 3
+                                      },
+                                      1200: {
+                                        items: 3
+                                      },
+                                    }
+                                  })
+                    </script>
+                </div>
+    </div>
+    <div id="qc">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc.jpg"></a></div>
+            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc1.jpg"></a></div>
+            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc2.jpg"></a></div>
+            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc3.jpg"></a></div>
+        </div>
+    </div>
+    <div id="bot-lane">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-3 gt">
+                <a href="#"><img src="./img/qc4.jpg"></a>
+                <p>Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus neque, vitae finibus erat odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui accumsan id. Cras non imperdiet metus. Sed nec turpis nec libero porta lacinia eget eu arcu. Sed dapibus sem quis nunc scelerisque eleifend. Mauris leo ex, accumsan nec arcu vitae, dictum vulputate eros.</p>
+                <div class="read"><a href="#">Continus Reading >></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 sever">
+                <div class="custom">
+                    <p>Customer service</p>
+                </div>
+                <div class="link-sever">
+                    <a href="#" class="ls">- Shipping Policy</a>
+                    <a href="#" class="ls">- Compensation Fist</a>
+                    <a href="#" class="ls">- My Account</a>
+                    <a href="#" class="ls">- Return Policy</a>
+                    <a href="#" class="ls">- Contact Us</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 sever">
+                <div class="custom">
+                    <p>Payment & Shipping</p>
+                </div>
+                <div class="link-sever">
+                    <a href="#" class="ls">- Term of Use</a>
+                    <a href="#" class="ls">- Payment Methods</a>
+                    <a href="#" class="ls">- Shipping Guide</a>
+                    <a href="#" class="ls">- Locations We Ship To</a>
+                    <a href="#" class="ls">- Estimated Delivery Time</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 sever">
+                <div class="custom">
+                    <p>Contact us</p>
+                </div>
+                <div class="contact">
+                    <p class="us"><span class="glyphicon glyphicon-map-marker"></span><strong> Addresss:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    <p class="us"><span class="glyphicon glyphicon-envelope"></span><strong> Email:</strong> info@plazathemes.com</p>
+                    <p class="us"><span class="glyphicon glyphicon-earphone"></span><strong> Phone: 0987. 654. 321</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="subscribe">
+        <div class="container">
+            <div class="col-xs-12 col-md-5 sign-up">
+                <input type="text" class="form-control newslletter" placeholder="Sign up for newslletter ">
+                <button class="btn btn-secondary sign" type="button">subscribe</button>
+            </div>
+            <div class="col-xs-12 col-md-7 mxh">
+                <div class="img-mxh">
+                    <a href="#"><img src="./img/m1.jpg"></a>
+                    <a href="#"><img src="./img/m2.jpg"></a>
+                    <a href="#"><img src="./img/m3.jpg"></a>
+                    <a href="#"><img src="./img/m4.jpg"></a>
+                    <a href="#"><img src="./img/m5.jpg"></a>
+                    <a href="#"><img src="./img/m6.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end">
+        <p>COPYRIGHT © <span>2015 plazaTHEMES</span>.. ALL RIGHTS RESERVED</p>
+    </div>
+    <div id="menu-end">
+        <div class="container">
+            <div class="col-xs-12 col-md-7 bot-menu">
+                    <ul>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Search Terms</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Orders and Returns</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+            </div>
+            <div class="col-xs-12 col-md-5 payment">
+                <div class="img-payment">
+                    <a href="#"><img src="./img/payment.jpg"></a>
+                    <a href="#"><img src="./img/payment2.jpg"></a>
+                    <a href="#"><img src="./img/payment3.jpg"></a>
+                    <a href="#"><img src="./img/payment4.jpg"></a>
+                    <a href="#"><img src="./img/payment5.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-logo">
+        <img src="./img/footer.png">
+    </div>
+</footer>
+</body>
+</html>
