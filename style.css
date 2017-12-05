@@ -17,11 +17,8 @@ body {
 header {
   background-image: url(./img/banner-top.jpg);
   width: 100%;
-  height: auto;
   float: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-size: cover; }
 
 .center {
   float: left;
@@ -510,7 +507,7 @@ header {
   float: left;
   height: auto;
   width: 100%;
-  margin-bottom: 30px;}
+  margin-bottom: 30px; }
   #bot-lane .gt, #bot-lane .sever {
     text-align: center;
     margin-top: 20px;
@@ -571,7 +568,8 @@ footer #subscribe {
   background-color: #282828; }
   footer #subscribe .sign-up {
     float: left;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 30px; }
     footer #subscribe .sign-up .newslletter {
       background-color: inherit;
       border: 1px solid #3e3e3e;
@@ -593,8 +591,22 @@ footer #subscribe {
     margin: 20px 0; }
     footer #subscribe .mxh .img-mxh {
       float: left; }
-      footer #subscribe .mxh .img-mxh img {
-        margin: 10px; }
+      footer #subscribe .mxh .img-mxh #fb, footer #subscribe .mxh .img-mxh #twit, footer #subscribe .mxh .img-mxh #gg, footer #subscribe .mxh .img-mxh #ins, footer #subscribe .mxh .img-mxh #you, footer #subscribe .mxh .img-mxh #vibe {
+        width: 60px;
+        height: 60px;
+        background: url("./img/social.png") -2px -5px; }
+      footer #subscribe .mxh .img-mxh #twit {
+        background: url("./img/social.png") -63px -5px; }
+      footer #subscribe .mxh .img-mxh #gg {
+        background: url("./img/social.png") -125px -5px; }
+      footer #subscribe .mxh .img-mxh #ins {
+        background: url("./img/social.png") -189px -5px; }
+      footer #subscribe .mxh .img-mxh #you {
+        background: url("./img/social.png") -251px -5px; }
+      footer #subscribe .mxh .img-mxh #vibe {
+        background: url("./img/social.png") -313px -5px; }
+      footer #subscribe .mxh .img-mxh img:hover {
+        opacity: 0.4; }
 footer #end {
   float: left;
   height: auto;
@@ -645,6 +657,13 @@ footer .footer-logo {
 
 /* Responsive min-width:606px*/
 @media (min-width: 606px) {
+  #h-header .center .phone {
+    width: 50%; }
+  #h-header .center .account {
+    width: 50%; }
+    #h-header .center .account .menutop {
+      float: right; }
+
   footer #menu-end .bot-menu {
     display: block; }
 
@@ -766,6 +785,14 @@ footer .footer-logo {
       border-radius: 0;
       background-color: #fff;
       color: black; }
+
+  #bot-lane .gt .qc, #bot-lane .sever .qc {
+    width: 100%;
+    float: left; }
+    #bot-lane .gt .qc img, #bot-lane .sever .qc img {
+      float: left; }
+  #bot-lane .sever .custom p {
+    text-align: left; }
 
   footer #subscribe {
     float: left; }
