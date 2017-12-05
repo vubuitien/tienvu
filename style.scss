@@ -608,6 +608,7 @@ header{
 }
 #bot-lane{
 	@include float-left;
+	margin-bottom: 30px;
 	.gt{
 		text-align: center;
 		margin-top: 20px;
@@ -678,7 +679,6 @@ footer{
 	#subscribe{
 		@include float-left;
 		background-color: #282828;
-		margin-top: 30px;
 		.sign-up{
 			float: left;
 			margin-top: 20px;
