@@ -509,7 +509,8 @@ header {
 #bot-lane {
   float: left;
   height: auto;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 30px;}
   #bot-lane .gt, #bot-lane .sever {
     text-align: center;
     margin-top: 20px;
@@ -567,8 +568,7 @@ footer #subscribe {
   float: left;
   height: auto;
   width: 100%;
-  background-color: #282828;
-  margin-top: 30px; }
+  background-color: #282828; }
   footer #subscribe .sign-up {
     float: left;
     margin-top: 20px; }
