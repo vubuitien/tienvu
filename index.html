@@ -16,7 +16,7 @@
     <script src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body data-target=".navbar">
     <header>
         <div id="h-header">
             <div class="container">
@@ -68,9 +68,9 @@
             </div>
         </div>
         <div id="menu">
-            <div class="container">
-                <div class="row">
-                        <nav class="navbar-inverse"> 
+            <nav class="navbar-inverse" data-spy="affix" data-offset-top="197"> 
+                <div class="container">
+                    <div class="row">
                             <div class="navbar-header">
                               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
@@ -78,44 +78,46 @@
                                 <span class="icon-bar"></span>                        
                               </button>
                             </div>
-                            <div class="collapse navbar-collapse" id="myNavbar">
-                                <div class="mid-menu">
-                                  <ul class="nav navbar-nav">
-                                    <li><a href="#">Home</a></li>
-                                    <li class="dropdown">
-                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women <span class="caret"></span></a>
-                                      <ul class="dropdown-menu">
-                                        <li><a href="#">Short</a></li>
-                                        <li><a href="#">coat</a></li>
-                                        <li><a href="#">hat</a></li>
+                            <div class="center-menu">
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <div class="mid-menu">
+                                      <ul class="nav navbar-nav">
+                                        <li><a href="#">Home</a></li>
+                                        <li class="dropdown">
+                                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women <span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Short</a></li>
+                                            <li><a href="#">coat</a></li>
+                                            <li><a href="#">hat</a></li>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Men <span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Short</a></li>
+                                            <li><a href="#">coat</a></li>
+                                            <li><a href="#">hat</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li class="dropdown">
+                                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bags <span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Balo</a></li>
+                                            <li><a href="#">handbag</a></li>
+                                            <li><a href="#">leather bag</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a href="#">Toys</a></li>
+                                        <li><a href="#">Accessories</a></li>
                                       </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Men <span class="caret"></span></a>
-                                      <ul class="dropdown-menu">
-                                        <li><a href="#">Short</a></li>
-                                        <li><a href="#">coat</a></li>
-                                        <li><a href="#">hat</a></li>
-                                      </ul>
-                                    </li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li class="dropdown">
-                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bags <span class="caret"></span></a>
-                                      <ul class="dropdown-menu">
-                                        <li><a href="#">Balo</a></li>
-                                        <li><a href="#">handbag</a></li>
-                                        <li><a href="#">leather bag</a></li>
-                                      </ul>
-                                    </li>
-                                    <li><a href="#">Toys</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                  </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </nav>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>                
         </div>
         <div id="slogan">
             <div class="container">
@@ -361,19 +363,15 @@
                                     responsive: {
                                       0: {
                                         items: 1,
-                                        nav: false
                                       },
                                       400: {
                                         items: 2,
-                                        nav: false
                                       },
                                       992: {
                                         items: 1,
-                                        nav: true
                                       },
                                       1200: {
                                         items: 2,
-                                        nav: true
                                       },
                                     }
                                   })
@@ -541,11 +539,9 @@
                                     responsive: {
                                       0: {
                                         dots: false,
-                                        nav:false
                                       },
                                       992: {
                                         dots: false,
-                                        nav:true
                                       },
                                     }
                                   })
@@ -776,15 +772,12 @@
                                     responsive: {
                                       0: {
                                         items: 1,
-                                        nav:false
                                       },
                                       400: {
                                         items: 2,
-                                        nav:false
                                       },
                                       600:{
                                         items:3,
-                                        nav:false
                                       },
                                       992: {
                                         items: 4
@@ -857,11 +850,9 @@
                                     responsive: {
                                       0: {
                                         items: 1,
-                                        nav: false
                                       },
                                       600: {
                                         items: 2,
-                                        nav: false
                                       },
                                       992: {
                                         items: 3
@@ -876,12 +867,36 @@
     </div>
     <div id="qc">
         <div class="container">
-            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc.jpg"></a></div>
-            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc1.jpg"></a></div>
-            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc2.jpg"></a></div>
-            <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc3.jpg"></a></div>
+        <div class="owl-carousel owl-theme owl-five">
+                <div class="item"><div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc.jpg"></a></div></div>
+                <div class="item"><div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc1.jpg"></a></div></div>
+                <div class="item"><div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc2.jpg"></a></div></div>
+                <div class="item"><div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./img/qc3.jpg"></a></div></div>
+            </div>
         </div>
     </div>
+    <script> 
+                                  $('.owl-five').owlCarousel({
+                                    margin: 10,
+                                    loop: true,
+                                    navText: ["<i class='glyphicon glyphicon-menu-left'></i>","<i class='glyphicon glyphicon-menu-right'></i>"],
+                                    dots: false,
+                                    responsive: {
+                                      0: {
+                                        items: 1,
+                                      },
+                                      600: {
+                                        items: 2,
+                                      },
+                                      992: {
+                                        items: 3
+                                      },
+                                      1200: {
+                                        items: 4
+                                      },
+                                    }
+                                  })
+                    </script>
     <div id="bot-lane">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-3 gt">
@@ -891,7 +906,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 sever">
                 <div class="custom">
-                    <p>Customer service</p>
+                    <p class="accordion">Customer service</p>
                 </div>
                 <div class="link-sever">
                     <a href="#" class="ls">- Shipping Policy</a>
@@ -903,7 +918,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 sever">
                 <div class="custom">
-                    <p>Payment & Shipping</p>
+                    <p class="accordion">Payment & Shipping</p>
                 </div>
                 <div class="link-sever">
                     <a href="#" class="ls">- Term of Use</a>
@@ -915,14 +930,31 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 sever">
                 <div class="custom">
-                    <p>Contact us</p>
+                    <p class="accordion">Contact us</p>
                 </div>
-                <div class="contact">
+                <div class="link-sever">
                     <p class="us"><span class="glyphicon glyphicon-map-marker"></span><strong> Addresss:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
                     <p class="us"><span class="glyphicon glyphicon-envelope"></span><strong> Email:</strong> info@plazathemes.com</p>
                     <p class="us"><span class="glyphicon glyphicon-earphone"></span><strong> Phone: 0987. 654. 321</strong></p>
                 </div>
             </div>
+            <script>
+
+                var acc = document.getElementsByClassName("custom");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].onclick = function(){
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    }
+                }
+            </script>
         </div>
     </div>
 </div>
