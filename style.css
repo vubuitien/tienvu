@@ -113,6 +113,11 @@ header {
       font-size: 1.5rem;
       text-align: left; }
 
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important; }
+
 #slogan {
   float: left;
   height: auto;
@@ -220,10 +225,6 @@ header {
         font-size: 15px; }
   #clogthing .f-clogthing, #clogthing .l-bag {
     margin-top: 20px; }
-    #clogthing .f-clogthing .owl-theme .owl-nav, #clogthing .l-bag .owl-theme .owl-nav {
-      position: absolute;
-      top: 0;
-      float: right !important; }
     #clogthing .f-clogthing .img-sp, #clogthing .l-bag .img-sp {
       float: left;
       height: auto;
@@ -352,10 +353,6 @@ header {
       background-color: black; }
   #seller .sell {
     margin-top: 20px; }
-    #seller .sell .owl-theme .owl-nav {
-      position: absolute;
-      top: 0;
-      float: right !important; }
     #seller .sell .img-sp {
       float: left;
       height: auto;
@@ -501,7 +498,10 @@ header {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5; }
   #qc .img-qc {
-    padding: 20px 0; }
+    width: 100%;
+    height: auto; }
+    #qc .img-qc img {
+      padding: 20px 0; }
 
 #bot-lane {
   float: left;
@@ -521,6 +521,13 @@ header {
       color: #333333; }
     #bot-lane .gt .read, #bot-lane .sever .read {
       text-align: left; }
+  #bot-lane .sever .accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px; }
   #bot-lane .sever .custom p {
     font-family: font-bol;
     border-bottom: 1px solid #e5e5e5;
@@ -532,7 +539,9 @@ header {
   #bot-lane .sever .link-sever {
     float: left;
     height: auto;
-    width: 100%; }
+    width: 100%;
+    display: none;
+    background-color: white; }
     #bot-lane .sever .link-sever .ls {
       font-family: font-regular;
       color: #444444;
@@ -545,19 +554,15 @@ header {
     #bot-lane .sever .link-sever .ls:first-child {
       border-top: none;
       margin-top: 5px; }
-  #bot-lane .sever .contact {
-    float: left;
-    height: auto;
-    width: 100%; }
-    #bot-lane .sever .contact .us {
+    #bot-lane .sever .link-sever .us {
       width: 100%;
       text-align: left;
       float: left;
       padding: 10px;
       border-top: 1px solid #e5e5e5; }
-      #bot-lane .sever .contact .us span {
+      #bot-lane .sever .link-sever .us span {
         vertical-align: middle; }
-    #bot-lane .sever .contact .us:first-child {
+    #bot-lane .sever .link-sever .us:first-child {
       border-top: none;
       margin-top: 5px; }
 
@@ -655,6 +660,28 @@ footer .footer-logo {
     height: auto;
     float: left; }
 
+.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next {
+  border-radius: 0;
+  background-color: #fff;
+  color: black; }
+
+.owl-five .owl-nav .owl-prev {
+  border-radius: 0;
+  background-color: inherit;
+  color: black;
+  position: absolute;
+  left: 0; }
+.owl-five .owl-nav .owl-next {
+  border-radius: 0;
+  background-color: inherit;
+  color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 5%; }
+.owl-five .owl-nav .owl-prev:hover, .owl-five .owl-nav .owl-next:hover {
+  background-color: inherit; }
+
 /* Responsive min-width:606px*/
 @media (min-width: 606px) {
   #h-header .center .phone {
@@ -683,9 +710,14 @@ footer .footer-logo {
     text-align: center;
     background: rgba(0, 0, 0, 0.62); }
     #menu .navbar-inverse {
-      background: no-repeat; }
+      background: no-repeat;
+      background: rgba(0, 0, 0, 0.62); }
       #menu .navbar-inverse ul li:hover {
         background-color: #212121; }
+      #menu .navbar-inverse .center-menu {
+        width: 100%;
+        height: auto;
+        position: relative; }
       #menu .navbar-inverse .mid-menu {
         display: flex;
         justify-content: center; }
@@ -791,8 +823,12 @@ footer .footer-logo {
     float: left; }
     #bot-lane .gt .qc img, #bot-lane .sever .qc img {
       float: left; }
+  #bot-lane .sever .custom .accordion {
+    position: relative; }
   #bot-lane .sever .custom p {
     text-align: left; }
+  #bot-lane .sever .link-sever {
+    display: block; }
 
   footer #subscribe {
     float: left; }
