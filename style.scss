@@ -133,6 +133,12 @@ header{
 		}
 	}
 }
+.affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+
+ }
 #slogan{
 	@include float-left;
 	text-align: center;
@@ -253,11 +259,6 @@ header{
 	}
 	.f-clogthing{
 		margin-top: 20px;
-		.owl-theme .owl-nav{
-			position: absolute;
-			top: 0;
-			float: right !important;
-		}
 		.img-sp{
 			float: left;
 			height: auto;
@@ -425,11 +426,6 @@ header{
 	}
 	.sell{
 		margin-top: 20px;
-		.owl-theme .owl-nav{
-			position: absolute;
-			top: 0;
-			float: right !important;
-		}
 		.img-sp{
 			float: left;
 			height: auto;
@@ -599,7 +595,11 @@ header{
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	.img-qc{
-		padding: 20px 0;
+		width: 100%;
+		height: auto;
+		img{
+			padding: 20px 0;
+		}
 	}
 }
 #bot-lane{
@@ -625,6 +625,14 @@ header{
 	}
 	.sever{
 		@extend .gt;
+		.accordion {
+		    cursor: pointer;
+		    width: 100%;
+		    border: none;
+		    text-align: left;
+		    outline: none;
+		    font-size: 15px;
+		}
 		.custom p{
 			font-family: font-bol;
 			border-bottom: 1px solid #e5e5e5;
@@ -636,6 +644,8 @@ header{
 		}
 		.link-sever{
 			@include float-left;
+		    display: none;
+		    background-color: white;
 			.ls{
 				font-family: font-regular;
 				color: #444444;
@@ -650,10 +660,6 @@ header{
 				border-top: none;
 				margin-top: 5px;
 			}
-
-		}
-		.contact{
-			@include float-left;
 			.us{
 				width: 100%;
 				text-align: left;
@@ -668,6 +674,7 @@ header{
 				border-top: none;
 				margin-top: 5px;
 			}
+
 		}
 	}
 }
@@ -795,6 +802,34 @@ footer{
 		}
 	}
 }
+.owl-theme .owl-nav{
+	.owl-prev, .owl-next{
+		border-radius: 0;
+		background-color: #fff;
+		color: black;
+	}
+}
+.owl-five .owl-nav{
+		.owl-prev{
+			border-radius: 0;
+			background-color: inherit;
+			color: black;
+			position: absolute;
+			left: 0;
+		}
+		.owl-next{
+			border-radius: 0;
+			background-color: inherit;
+			color: black;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			margin-bottom: 5%;
+		}
+		.owl-prev:hover, .owl-next:hover{
+			background-color: inherit;
+		}
+	}
 
 /* Responsive min-width:606px*/
 @media (min-width:606px){
@@ -834,12 +869,19 @@ footer{
 		background: rgba(0, 0, 0, 0.62);
 		.navbar-inverse{
 			background:no-repeat;
+			background: rgba(0, 0, 0, 0.62);
 			ul li:hover{
 				background-color:#212121;
+			}
+			.center-menu{
+				width: 100%;
+				height: auto;
+				position: relative;
 			}
 			.mid-menu{
 				display: flex;
 				justify-content: center;
+
 			}
 		}
 		
@@ -969,8 +1011,16 @@ footer{
 			}
 		}
 		.sever{
-			.custom p{
-				text-align: left;
+			.custom{
+				.accordion{
+					position: relative;
+				} 
+				p{
+					text-align: left;
+				}
+			}
+			.link-sever{
+				display: block;
 			}
 		}
 	}
