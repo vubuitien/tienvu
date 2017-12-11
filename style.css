@@ -4,10 +4,10 @@
 
 @font-face {
   font-family: font-regular;
-  src: url("./font/Raleway-Regular.ttf"); }
+  src: url("./font/Raleway-Regular.eot?") format("eot"), url("./font/Raleway-Regular.woff") format("woff"), url("./font/Raleway-Regular.ttf") format("truetype"), url("./font/Raleway-Regular.svg#Raleway") format("svg"); }
 @font-face {
   font-family: font-bol;
-  src: url("./font/Raleway-Bold.ttf"); }
+  src: url("./font/Raleway-Bold.eot?") format("eot"), url("./font/Raleway-Bold.woff") format("woff"), url("./font/Raleway-Bold.ttf") format("truetype"), url("./font/Raleway-Bold.svg#Raleway-Bold") format("svg"); }
 body {
   min-width: 320px;
   height: auto;
@@ -681,6 +681,23 @@ footer .footer-logo {
   margin-bottom: 5%; }
 .owl-five .owl-nav .owl-prev:hover, .owl-five .owl-nav .owl-next:hover {
   background-color: inherit; }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px; }
+
+#myBtn:hover {
+  background-color: #000; }
 
 /* Responsive min-width:606px*/
 @media (min-width: 606px) {
